@@ -27,6 +27,8 @@ li {
 }
 /* ------------NAV------------ */
 .logo {
+  margin-left: 215px;
+  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
   text-decoration: none;
@@ -71,7 +73,8 @@ li {
 .bar-link .link:focus {
   color: #2196f3;
 }
-
+.contacts {
+}
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -92,10 +95,9 @@ li {
 }
 .bar-link {
   display: flex;
-  outline: 2px solid turquoise;
-}
-.bar-link .item {
-  background-color: tomato;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 331px;
 }
 
 .bar-link .item + .item {
@@ -103,6 +105,9 @@ li {
 }
 .nav-container {
   display: flex;
+  align-items: center;
+  margin-top: 0pc;
+  margin-bottom: 0pc;
 }
 /* ------------NAV------------ */
 
