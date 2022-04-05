@@ -126,8 +126,8 @@ li {
 .navi {
   display: flex;
   width: 1200px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
@@ -372,9 +372,12 @@ li {
   display: block;
 }
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 114px;
 }
 .container-filter {
   display: flex;
@@ -384,11 +387,13 @@ li {
   margin-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+}
+.container-filter .li .link:first-child {
+  margin-left: 0%;
 }
 
 .container-filter .link {
-  margin-right: 8px;
+  margin-left: 8px;
   border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
@@ -400,6 +405,7 @@ li {
   color: var(--brandcolor);
   background: #f5f4fa;
 }
+
 .container-filter .link:hover,
 .container-filter .link:focus {
   color: var(--background-nav-color);
@@ -423,4 +429,15 @@ li {
 .image-container {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.image-container .item {
+  width: 370px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid #eeeeee;
 }
