@@ -43,9 +43,7 @@ li {
 }
 /* ------------NAV------------ */
 .logo {
-  margin-left: 200px;
   margin-right: 93px;
-  padding-left: 15px;
   font-family: "Raleway";
   font-weight: 700;
   text-decoration: none;
@@ -91,7 +89,7 @@ li {
   color: #2196f3;
 }
 .contacts {
-  margin-right: 215px;
+  margin-right: 331px;
   padding-right: 15px;
   padding-left: 0px;
   margin-top: 32px;
@@ -125,12 +123,16 @@ li {
 .bar-link .item + .item {
   margin-left: 50px;
 }
-.nav-container {
+.navi {
   display: flex;
+  width: 1200px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: center;
-
-  /* border: 1px solid #ececec; */
-  outline: 2px solid tomato;
+  align-self: center;
+  border: 1px solid #ececec;
 }
 /* ------------NAV------------ */
 
@@ -292,15 +294,23 @@ li {
 /* -----------FOOTER------------ */
 .basement {
   background: #2f303a;
+  height: 252px;
 }
 
-.content-basement {
-  display: block;
+.content-container {
+  display: inline-block;
   width: 1200px;
-  padding-left: 200px;
-  /* padding-left: 15px; */
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .basement-logo {
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-top: 60px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -325,18 +335,16 @@ li {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.basement-contacts-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
+
 .basement-contacts-link:hover,
 .basement-contacts-link:focus {
   color: #2196f3;
 }
-
+.basement-contacts {
+  padding: 0px;
+  margin-top: 9px;
+  margin-bottom: auto;
+}
 .basement-contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -363,20 +371,37 @@ li {
   padding-bottom: 32px;
   display: block;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-filter {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding-left: 0px;
+  margin-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+}
 
-.filter-button-link {
+.container-filter .link {
+  margin-right: 8px;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  text-align: center;
+
   border-radius: 4px;
   color: var(--brandcolor);
   background: #f5f4fa;
 }
-.filter-button-link:hover,
-.filter-button-link:focus {
+.container-filter .link:hover,
+.container-filter .link:focus {
   color: var(--background-nav-color);
   background: #2196f3;
 }
@@ -393,4 +418,9 @@ li {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
 }
