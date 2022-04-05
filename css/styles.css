@@ -29,6 +29,18 @@ li {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* ------------NAV------------ */
 .logo {
   margin-left: 200px;
@@ -79,6 +91,7 @@ li {
   color: #2196f3;
 }
 .contacts {
+  margin-right: 215px;
   padding-right: 15px;
   padding-left: 0px;
   margin-top: 32px;
@@ -115,9 +128,9 @@ li {
 .nav-container {
   display: flex;
   align-items: center;
-  margin-top: 0pc;
-  margin-bottom: 0pc;
-  border: 1px solid #ececec;
+
+  /* border: 1px solid #ececec; */
+  outline: 2px solid tomato;
 }
 /* ------------NAV------------ */
 
@@ -231,10 +244,13 @@ li {
 .team {
   background: #f5f4fa;
 }
-.team-list {
+.team-container {
   display: flex;
   justify-content: center;
-  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
@@ -242,10 +258,10 @@ li {
   padding-left: 15px;
   padding-right: 15px;
 }
-.team-list .item {
+.team-container .item {
   margin-right: 30px;
 }
-.team-list .item:last-child {
+.team-container .item:last-child {
   margin-right: 0px;
 }
 .team-title {
@@ -337,12 +353,15 @@ li {
 
 /* -----------PORTFOLIO------------ */
 .link-portfolio {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: #2196f3;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .filter-button-link {

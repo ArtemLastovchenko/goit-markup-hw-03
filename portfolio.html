@@ -14,22 +14,24 @@
 
 <body>
     <header>
-        <nav class="nav-container">
+        <div class="nav-container">
             <a class="logo" href="./index.html"> <span class="logo-web">Web</span>Studio</a>
-            <ul class="bar-link">
-                <li class="bar-link-item"><a class="link" href="./index.html">Студия</a></li>
-                <li class="bar-link-item"><a class="link-portfolio" href="./portfolio.html">Портфолио</a></li>
-                <li class="bar-link-item"><a class="link" href="">Контакты</a></li>
+            <nav>
+                <ul class="bar-link">
+                    <li class="item"><a class="link" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link-portfolio" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts">
+                <li class="item">
+                    <a class="contacts-link" href="malito">info@devstudio.com</a>
+                </li>
+                <li class="item">
+                    <a class="contacts-link" href="tel">+380961111111</a>
+                </li>
             </ul>
-        <ul class="contacts">
-            <li>
-                <a class="contacts-link" href="malito">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="contacts-link" href="tel">+38 096 111 11 11</a>
-            </li>
-        </ul>
-        </nav>
+        </div>
     </header>
         <section class="filter">
             <h1 class="filter-title">Наши работы</h1>
@@ -40,7 +42,7 @@
                     <li><button class="filter-button-link" type="button">Дизайн</button></li>
                     <li><button class="filter-button-link" type="button">Маркетинг</button></li>
                 </ul>
-            <ul>
+            <ul class="image-container">
                 <li>
                     <img src="./images/techno.jpg" alt="Технокряк">
                     <h2 class="filter-examples">Технокряк</h2>
@@ -89,16 +91,18 @@
         </section>
 
                     <footer class="basement">
-                        <a class="basement-logo" href="./index.html"> <span class="basement-logo-web">Web</span>Studio</a>
-                        <address class="basement-location">г. Киев, пр-т Леси Украинки, 26</address>
-                        <ul class="basement-contacts">
-                            <li>
-                                <a class="basement-contacts-link" href="tel">info@devstudio.com</a>
-                            </li>
-                            <li>
-                                <a class="basement-contacts-link" href="malito">+38 096 111 11 11</a>
-                            </li>
-                        </ul>
+                        <div class="content-container">
+                            <a class="basement-logo" href="./index.html"> <span class="basement-logo-web">Web</span>Studio</a>
+                            <address class="basement-location">г. Киев, пр-т Леси Украинки, 26</address>
+                            <ul class="basement-contacts">
+                                <li>
+                                    <a class="basement-contacts-link" href="tel">info@devstudio.com</a>
+                                </li>
+                                <li>
+                                    <a class="basement-contacts-link" href="malito">+38 096 111 11 11</a>
+                                </li>
+                            </ul>
+                        </div>
                     </footer>
     </body>
     
