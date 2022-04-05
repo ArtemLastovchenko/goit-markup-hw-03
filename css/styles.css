@@ -25,9 +25,13 @@ li {
 .li {
   cursor: pointer;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ------------NAV------------ */
 .logo {
-  margin-left: 215px;
+  margin-left: 200px;
   margin-right: 93px;
   padding-left: 15px;
   font-family: "Raleway";
@@ -102,7 +106,7 @@ li {
   display: flex;
   margin: 0px;
   padding: 0px;
-  margin-right: 331px;
+  padding-right: 331px;
 }
 
 .bar-link .item + .item {
@@ -113,43 +117,45 @@ li {
   align-items: center;
   margin-top: 0pc;
   margin-bottom: 0pc;
+  border: 1px solid #ececec;
 }
 /* ------------NAV------------ */
 
 /* ------------HEROY---------- */
-.heroy-back {
+.heroy {
   background: #2f303a;
-  display: block;
+  text-align: center;
 }
+/* background: #2f303a;
+  text-align: center; */
 
 .title-heroy {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   color: var(--first-title-color);
   text-transform: uppercase;
-  margin: 200px 452px 280px 452px;
+  padding: 200px 452px 280px 452px;
+  margin: 0px;
 }
 
 .button-heroy {
-  display: flex;
-  justify-content: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
   text-align: center;
+  text-decoration: none;
   letter-spacing: 0.06em;
   color: var(--first-title-color);
   background: #2196f3;
-}
-.button-wraper {
-  display: flex;
-  justify-content: center;
+  padding: 10px 32px 10px 32px;
+  border-radius: 4px;
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 /* ------------HEROY---------- */
@@ -157,6 +163,17 @@ li {
 /* -----------FEATURES---------- */
 .features-title {
 }
+
+.features-container {
+  display: flex;
+  width: 1230px;
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .features-about {
   font-weight: 700;
   font-size: 14px;
@@ -171,9 +188,28 @@ li {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.features-container .item {
+  margin-right: 30px;
+}
+
+.features-container .item:last-child {
+  margin-right: 0px;
+}
+
 /* -----------FEATURES---------- */
 
 /* -----------DOING------------- */
+.doing-container {
+  display: flex;
+  justify-content: center;
+  width: 1230px;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -183,11 +219,34 @@ li {
   color: var(--brandcolor);
 }
 
+.doing-container .item {
+  margin-right: 30px;
+}
+.doing-container .item:last-child {
+  margin-right: 0px;
+}
 /* -----------DOING------------- */
 
 /* -----------TEAM-------------- */
 .team {
   background: #f5f4fa;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  width: 1230px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.team-list .item {
+  margin-right: 30px;
+}
+.team-list .item:last-child {
+  margin-right: 0px;
 }
 .team-title {
   font-weight: 700;
@@ -195,6 +254,8 @@ li {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--brandcolor);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-name {
   font-weight: 500;
@@ -209,11 +270,19 @@ li {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 /* -----------TEAM-------------- */
 
 /* -----------FOOTER------------ */
 .basement {
   background: #2f303a;
+}
+
+.content-basement {
+  display: block;
+  width: 1200px;
+  padding-left: 200px;
+  /* padding-left: 15px; */
 }
 .basement-logo {
   font-family: "Raleway";
