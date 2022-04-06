@@ -12,6 +12,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
 }
 .body {
   cursor: pointer;
@@ -33,6 +34,12 @@ li {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   align-self: center;
 }
 
@@ -89,11 +96,10 @@ li {
   color: #2196f3;
 }
 .contacts {
-  margin-right: 331px;
-  padding-right: 15px;
-  padding-left: 0px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  display: flex;
+  margin-right: 0px;
+  padding: 0px;
+  margin-left: auto;
 }
 .contacts-link {
   font-weight: 500;
@@ -102,14 +108,14 @@ li {
   letter-spacing: 0.02em;
   color: rgba(117, 117, 117, 1);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contacts-link:hover,
 .contacts-link :focus {
   color: #2196f3;
 }
-.contacts {
-  display: flex;
-}
+
 .contacts .item + .item {
   margin-left: 50px;
 }
@@ -117,7 +123,7 @@ li {
   display: flex;
   margin: 0px;
   padding: 0px;
-  padding-right: 331px;
+  margin-right: 0px;
 }
 
 .bar-link .item + .item {
@@ -132,7 +138,7 @@ li {
   padding-right: 15px;
   align-items: center;
   align-self: center;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 /* ------------NAV------------ */
 
@@ -140,9 +146,28 @@ li {
 .heroy {
   background: #2f303a;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 /* background: #2f303a;
   text-align: center; */
+.heroy .container {
+  display: block;
+}
+
+.features-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .title-heroy {
   font-weight: 900;
@@ -152,8 +177,9 @@ li {
   letter-spacing: 0.06em;
   color: var(--first-title-color);
   text-transform: uppercase;
-  padding: 200px 452px 280px 452px;
+  padding: 0px;
   margin: 0px;
+  margin-bottom: 30px;
 }
 
 .button-heroy {
@@ -179,12 +205,13 @@ li {
 .features-title {
 }
 
-.features-container {
+.features .container {
+  width: 1170px;
   display: flex;
-  width: 1230px;
-  /* text-align: center; */
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0px;
+  margin-bottom: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -196,6 +223,8 @@ li {
   letter-spacing: 0.03em;
   color: var(--brandcolor);
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .features-text {
   font-size: 14px;
@@ -203,18 +232,19 @@ li {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.features-container .item {
+.features .item {
   margin-right: 30px;
+  width: 270px;
 }
 
-.features-container .item:last-child {
+.features .item:last-child {
   margin-right: 0px;
 }
 
 /* -----------FEATURES---------- */
 
 /* -----------DOING------------- */
-.doing-container {
+/* .doing-container {
   display: flex;
   justify-content: center;
   width: 1230px;
@@ -224,7 +254,20 @@ li {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+} */
+.section-doing .container {
+  display: flex;
+  justify-content: center;
+  width: 1230px;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
 }
+
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -232,24 +275,32 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brandcolor);
+  margin-bottom: 50px;
+  margin-top: 0px;
 }
 
-.doing-container .item {
+.container .item {
   margin-right: 30px;
 }
-.doing-container .item:last-child {
+.container .item:last-child {
   margin-right: 0px;
 }
 /* -----------DOING------------- */
 
 /* -----------TEAM-------------- */
-.team {
+.section-team {
   background: #f5f4fa;
 }
-.team-container {
+.section-team .container {
+}
+.section-team .team-container {
   display: flex;
   justify-content: center;
-  padding-left: 15px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  /* padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
 
@@ -258,10 +309,11 @@ li {
   margin-right: auto;
   margin-bottom: 0px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 15px; */
 }
-.team-container .item {
+.section-team. .team-container .item {
   margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-container .item:last-child {
   margin-right: 0px;
@@ -274,6 +326,8 @@ li {
   color: var(--brandcolor);
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 .team-name {
   font-weight: 500;
@@ -360,6 +414,20 @@ li {
 }
 
 /* -----------PORTFOLIO------------ */
+.filter-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link-portfolio {
   text-decoration: none;
   font-weight: 500;
@@ -372,19 +440,23 @@ li {
   display: block;
 }
 .container {
+  display: block;
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 114px;
 }
 .container-filter {
   display: flex;
   justify-content: center;
   width: 1200px;
+  padding-top: 100px;
   padding-left: 0px;
-  margin-bottom: 56px;
+  padding-bottom: 56px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -400,6 +472,11 @@ li {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
 
   border-radius: 4px;
   color: var(--brandcolor);
@@ -429,15 +506,29 @@ li {
 .image-container {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: -30px;
-  margin-top: -30px;
+  padding: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.image-container .item:nth-child(3) {
+  margin-right: 0px;
 }
 
 .image-container .item {
   width: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #eeeeee;
+}
+.item .filter-examples {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+}
+.item .filter-name {
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
