@@ -322,6 +322,7 @@ li {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--brandcolor);
 }
 .team-profession {
@@ -330,6 +331,7 @@ li {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #757575;
 }
 
